@@ -1,0 +1,32 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+getgenv().SecureMode = true
+
+local Window = Rayfield:CreateWindow({
+	Name = "Shindo Hub - By Madalyyn",
+	LoadingTitle = "Shindo Hub - By Madalyyn",
+	LoadingSubtitle = "Quit Shindo!!!",
+})
+local Tab = Window:CreateTab("Main Scripts")
+local Section = Tab:CreateSection("Some may not work... idk.")
+local Label = Tab:CreateLabel("Updating whenever i find new scripts")
+
+local Button = Tab:CreateButton({
+	Name = "Auto Farm, etc",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/UltraStuff/scripts2/main/shindo", true))()
+
+	end,
+})
+local Button = Tab:CreateButton({
+	Name = "Infinite Spins (Key on https://pastebin.com/mikZaVfe )",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Corrupt2625/pjv/main/Loader.lua"))()
+	end,
+})
+local Button = Tab:CreateButton({
+	Name = "Inf RellCoins (idk if patched)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Skrapisismyscript/Solo_Hub/main/INFRELLCOINS"))()
+
+	end,
+})
